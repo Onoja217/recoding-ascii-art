@@ -14,9 +14,13 @@ func GenerateArt(input string, banner map[rune][]string) string {
 	}
 	lines := SplitLine(input)
 	var output []string
-	for _, line := range lines {
+	for i, line := range lines {
 		if line == "" {
+			if i == len(lines)-1{
+				output = append(output,RenderLine("",banner)
+			}else {
 			output = append(output, "")
+			}
 			continue
 		}
 		if _, err := ValidateAll(line); err != nil {
