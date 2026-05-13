@@ -2,7 +2,7 @@ package main
 
 func RenderLine(text string, banner map[rune][]string) []string {
 	var result []string
-	for i := 0; i < 8; i++ {
+	for i := 0; i < 8; i++{
 		word := ""
 		for _, ch := range text {
 			word += banner[ch][i]

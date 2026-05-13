@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func ValidateAll(s string) (rune, error) {
+func ValidateInput(s string) (rune, error) {
 	if len(s) == 0 {
 		return 0, nil
 	}

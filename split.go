@@ -4,6 +4,6 @@ import (
 	"strings"
 )
 
-func SplitLine(input string) []string {
+func SplitInput(input string) []string {
 	return strings.Split(input, "\\n")
 }
