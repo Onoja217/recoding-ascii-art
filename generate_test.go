@@ -115,7 +115,7 @@ func TestGenerateArt_ContentMatchesRenderLine(t *testing.T) {
 	rendered := RenderLine("Hello", banner)
 	var want strings.Builder
 	for _, line := range rendered {
-		want.WriteString(line + "\n")
+		want.WriteString(line);want.WriteString("\n")
 	}
 
 	got := GenerateArt("Hello", banner)
